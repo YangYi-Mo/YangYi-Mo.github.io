@@ -7,13 +7,22 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="作用域 1.全局作用域全局作用域：或者.js文件顶级，在此声明的变量在任何地方都可以被访问函数内部，如果没有使用任何关键字 那么这个变量会被挂到window上面，全局的 123456789101112&lt;script&gt;const num &#x3D; 10console.log(num)function fu() &amp;#123;  console.log(num)&amp;#125;fu()  上面 nu">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2023/01/08/JS%E8%BF%9B%E9%98%B601(%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E9%97%AD%E5%8C%85%E3%80%81GC%E3%80%81%E6%8F%90%E5%8D%87%E3%80%81%E8%A7%A3%E6%9E%84)/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="作用域 1.全局作用域全局作用域：或者.js文件顶级，在此声明的变量在任何地方都可以被访问函数内部，如果没有使用任何关键字 那么这个变量会被挂到window上面，全局的 123456789101112&lt;script&gt;const num &#x3D; 10console.log(num)function fu() &amp;#123;  console.log(num)&amp;#125;fu()  上面 nu">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/34572096/1671495798338-83b33112-6790-4fb1-92ae-1ed14752efaf.png#averageHue=%23c7b58b&clientId=u54fcfbea-e2b6-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=723&id=u48ec0247&margin=%5Bobject%20Object%5D&name=%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E2%80%94%E8%A7%A3%E9%87%8A.png&originHeight=723&originWidth=1737&originalType=binary&ratio=1&rotation=0&showTitle=false&size=107510&status=done&style=none&taskId=ufbe53457-7eca-4682-ac9c-657298ce64c&title=&width=1737">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/34572096/1671495863720-6c536a0a-4a0a-4f51-945b-2ca886009ad7.png#averageHue=%23fbfbfb&clientId=u54fcfbea-e2b6-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=788&id=ua9bd9313&margin=%5Bobject%20Object%5D&name=%E6%A0%87%E8%AE%B0%E6%B8%85%E9%99%A4%E6%B3%95.png&originHeight=788&originWidth=1530&originalType=binary&ratio=1&rotation=0&showTitle=false&size=111671&status=done&style=none&taskId=ub9a697c5-1bb5-4e7f-acd7-018b53cf2f3&title=&width=1530">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/34572096/1671504875097-1b5ff2fb-4714-4952-b0f3-0898c8ea18f6.png#averageHue=%23e1d785&clientId=u486c3f4c-f2f3-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=526&id=u7270b979&margin=%5Bobject%20Object%5D&name=split.png&originHeight=526&originWidth=1329&originalType=binary&ratio=1&rotation=0&showTitle=false&size=65638&status=done&style=none&taskId=ucfc56819-8d8f-4d34-8ace-7882f7c4460&title=&width=1329">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2022/png/34572096/1671504884364-9abf4922-678e-412c-98e0-f5c66b215397.png#averageHue=%23e1d785&clientId=u486c3f4c-f2f3-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=526&id=u5ecce9ee&margin=%5Bobject%20Object%5D&name=split.png&originHeight=526&originWidth=1329&originalType=binary&ratio=1&rotation=0&showTitle=false&size=65638&status=done&style=none&taskId=u1d7062f6-dd7a-4b6a-aa1d-7acb89ba2cb&title=&width=1329">
+<meta property="article:published_time" content="2023-01-08T10:38:49.786Z">
+<meta property="article:modified_time" content="2022-12-23T10:19:45.889Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2022/png/34572096/1671495798338-83b33112-6790-4fb1-92ae-1ed14752efaf.png#averageHue=%23c7b58b&clientId=u54fcfbea-e2b6-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=723&id=u48ec0247&margin=%5Bobject%20Object%5D&name=%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E2%80%94%E8%A7%A3%E9%87%8A.png&originHeight=723&originWidth=1737&originalType=binary&ratio=1&rotation=0&showTitle=false&size=107510&status=done&style=none&taskId=ufbe53457-7eca-4682-ac9c-657298ce64c&title=&width=1737">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +71,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-JS进阶01(作用域、闭包、GC、提升、解构)" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-JS进阶01(作用域、闭包、GC、提升、解构)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2023/01/08/JS%E8%BF%9B%E9%98%B601(%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E9%97%AD%E5%8C%85%E3%80%81GC%E3%80%81%E6%8F%90%E5%8D%87%E3%80%81%E8%A7%A3%E6%9E%84)/" class="article-date">
   <time datetime="2023-01-08T10:38:49.786Z" itemprop="datePublished">2023-01-08</time>
@@ -169,97 +176,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2023/01/07/test/" class="article-date">
-  <time datetime="2023-01-07T12:53:05.364Z" itemprop="datePublished">2023-01-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/01/07/test/">使用blog的第一天</a>
-    </h1>
+    <a href="/2023/01/07/test/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">使用blog的第一天</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>使用 hexo 进行</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/07/test/" data-id="clcly6u6f00000gvof2k9b5s8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2023/01/07/hello-world/" class="article-date">
-  <time datetime="2023-01-07T12:21:17.468Z" itemprop="datePublished">2023-01-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/01/07/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/01/07/hello-world/" data-id="clclxtmws0000rwvo8e1b35qo" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
